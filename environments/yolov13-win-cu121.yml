@@ -1,0 +1,20 @@
+# Shared Windows visual runtime. The historical Conda name is retained because
+# YOLOv13 was the first external model validated in this environment.
+name: hypercomp-yolov13
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.2.2+cu121
+      - torchvision==0.17.2+cu121
+      - numpy==1.26.4
+      - scipy==1.17.1
+      - scikit-learn==1.6.1
+      - optuna==4.5.0
+      - opencv-python==4.10.0.84
+      - einops==0.8.1
+      - huggingface-hub==1.27.0
+      - -e third_party/YOLOv13

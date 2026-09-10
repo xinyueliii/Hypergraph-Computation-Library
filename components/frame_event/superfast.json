@@ -1,0 +1,21 @@
+{
+  "id": "superfast",
+  "name": "SuperFast",
+  "task": "event_based_video_frame_interpolation",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/lisiqi19971013/SuperFast",
+  "source_path": "third_party/SuperFast",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2024-04-19",
+  "upstream_commit": "b4d29efc75c4a6ca07de4c5f56f555de48b65741",
+  "upstream_git_linked": false,
+  "license": "MIT; slayerPytorch dependency is GPL-3.0",
+  "paper_url": "https://doi.org/10.1109/TPAMI.2022.3224051",
+  "checkpoint": "available_external: ckpt_THU_HSEVI.pth, 418931023 bytes, SHA256 4828b7647b77198795165d2a3c18c37c2773b4c785fd06a96da9df296965ce88; stored outside Git under /root/autodl-tmp/hypercomp-data/checkpoints/superfast",
+  "upstream_environment": "Validated remote compatibility runtime: Ubuntu 20.04, Python 3.8.10, PyTorch 1.10.0+cu113, torchvision 0.11.1+cu113, CUDA toolkit 11.3, GCC 9, slayerPytorch commit 01beeeb6a181546d6c6830382ce6086bfc587836. The upstream-declared PyTorch 1.9/CUDA 11.1 combination was not reconstructed exactly.",
+  "entry_point": "hypercomp.plugins.superfast.adapter:run_superfast",
+  "evidence_path": "docs/validation/superfast-remote-adaptation-2026-08-11.md",
+  "environment_id": "superfast-remote-cu113",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

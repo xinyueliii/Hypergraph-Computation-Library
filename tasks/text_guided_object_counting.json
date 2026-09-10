@@ -1,0 +1,6 @@
+{
+  "id": "text_guided_object_counting",
+  "name": "Text-Guided Object Counting",
+  "description": "Count and localize instances specified by a natural-language query in one image.",
+  "default_model": "count-anything"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "evlight-v11",
+  "name": "EvLight V11 with Soft Hypergraph Bottleneck",
+  "task": "event_guided_low_light_enhancement",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/EthanLiang99/EvLight",
+  "source_path": "third_party/EvLight",
+  "source_distribution": "ignored_internal_runtime_snapshot",
+  "upstream_version": "internal-v11-2026-02-16",
+  "upstream_git_linked": false,
+  "license": "Upstream EvLight source is MIT; the supplied V11 modifications are an internal user-provided research snapshot. SDSD data is not redistributed through Git.",
+  "paper_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Liang_Towards_Robust_Event-guided_Low-Light_Image_Enhancement_A_Large-Scale_Real-World_Event-Image_CVPR_2024_paper.html",
+  "checkpoint": "available_external: evlight_v11_epoch19_final_compact_inference.pth, derived from the completed 20-epoch model_best.pth.tar by removing optimizer state and 302 separately loaded CLIP parameters; SHA256 5d44526e4310a01ff3b0a840a9c541fdef6217738ff5d3883596ed4466dec04b; trained on a 16-sequence SDSD-in fast subset and stored outside Git under /root/autodl-tmp/hypercomp-data/checkpoints/evlight-v11",
+  "upstream_environment": "Source training verified on an independent RTX 4090 instance with Python 3.8.10, PyTorch 1.11.0+cu113 and torchvision 0.12.0+cu113. HyperComp checkpoint-backed inference is verified in the shared visual-remote-cu121 runtime with Python 3.11.15, PyTorch 2.2.2+cu121 and torchvision 0.17.2+cu121.",
+  "entry_point": "hypercomp.plugins.evlight_v11.adapter:run_evlight_v11",
+  "evidence_path": "docs/validation/evlight-v11-remote-adaptation-2026-08-15.md",
+  "environment_id": "visual-remote-cu121",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

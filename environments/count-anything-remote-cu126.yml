@@ -1,0 +1,15 @@
+name: count-anything-remote-cu126
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch==2.7.1
+      - torchvision==0.22.1
+      - numpy==1.26.4
+      # Install the remaining pinned upstream requirements from the fixed
+      # Count-Anything checkout. The retained AutoDL runtime also uses
+      # setuptools<81 because SAM3 imports pkg_resources.

@@ -1,0 +1,6 @@
+{
+  "id": "event_guided_low_light_enhancement",
+  "name": "Event-Guided Low-Light Image Enhancement",
+  "description": "Enhance a low-light RGB frame with aligned event measurements and optional text guidance.",
+  "default_model": "evlight-v11"
+}

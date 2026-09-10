@@ -1,0 +1,1 @@
+"""E-HRSAI isolated plugin."""

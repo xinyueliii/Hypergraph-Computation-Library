@@ -1,0 +1,21 @@
+{
+  "id": "soft-hgnn-detection",
+  "name": "SoftHGNN Object Detection",
+  "task": "object_detection",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/Mengqi-Lei/SoftHGNN",
+  "source_path": "third_party/SoftHGNN",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2026-08-09",
+  "upstream_commit": "3f46b20eeb226616a8af89f321b2e1dc3ee3634f",
+  "upstream_git_linked": false,
+  "license": "MIT",
+  "paper_url": "https://link.springer.com/article/10.1007/s11263-026-02656-2",
+  "checkpoint": "not_published_generate_by_training; unified smoke builds YOLO11-SoftHGNN-N with deterministic random initialization",
+  "upstream_environment": "Validated compatibility runtime: Ubuntu 20.04; Python 3.11.15; PyTorch 2.2.2+cu121; torchvision 0.17.2+cu121; Ultralytics 8.3.63; RTX 3090. YOLO11-SoftHGNN-N untrained architecture smoke passed in shared visual-remote-cu121 on 2026-08-12; YOLOv12 FlashAttention path was not used.",
+  "entry_point": "hypercomp.plugins.soft_hgnn_detection.adapter:run_soft_hgnn_detection",
+  "evidence_path": "docs/validation/soft-hgnn-detection-remote-adaptation-2026-08-12.md",
+  "environment_id": "visual-remote-cu121",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

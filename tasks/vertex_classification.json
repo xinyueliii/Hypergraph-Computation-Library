@@ -1,0 +1,6 @@
+{
+  "id": "vertex_classification",
+  "name": "Vertex Classification",
+  "description": "Classify vertices with native DHG hypergraph neural networks.",
+  "default_model": "hgnn"
+}

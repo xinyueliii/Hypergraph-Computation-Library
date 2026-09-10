@@ -1,0 +1,6 @@
+{
+  "id": "hypergraph_computation",
+  "name": "Hypergraph Computation",
+  "description": "Use the native DHG structures and operators as the platform foundation.",
+  "default_model": "deep-hypergraph"
+}

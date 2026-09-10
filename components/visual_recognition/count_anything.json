@@ -1,0 +1,21 @@
+{
+  "id": "count-anything",
+  "name": "Count Anything",
+  "task": "text_guided_object_counting",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/Mengqi-Lei/count-anything",
+  "source_path": "third_party/Count-Anything",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2026-08-12",
+  "upstream_commit": "0fffaefb3bbdcd930c135dcc02e2e359a038f2cb",
+  "upstream_git_linked": false,
+  "license": "Apache-2.0 for code; checkpoint and input-image redistribution terms are reviewed separately",
+  "paper_url": "https://arxiv.org/abs/2605.30846",
+  "checkpoint": "available_external: count_anything.pt, 3565313633 bytes, SHA256 2f84be3c3af5508388b732827e725cb6d6c4dd826ffda7f80de234ebd1ef0f92; official Hugging Face revision 951ee711d600af580f83d534967af491728de995",
+  "upstream_environment": "Validated compatibility runtime: Ubuntu 20.04; Python 3.11.15; PyTorch 2.7.1+cu126; torchvision 0.22.1+cu126; NumPy 1.26.4; RTX 3090. A separate runtime was retained only after visual-remote-cu121 reproduced a missing torch.nn.attention API.",
+  "entry_point": "hypercomp.plugins.count_anything.adapter:run_count_anything",
+  "evidence_path": "docs/validation/count-anything-remote-adaptation-2026-08-12.md",
+  "environment_id": "count-anything-remote-cu126",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

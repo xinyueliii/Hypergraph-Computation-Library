@@ -1,0 +1,6 @@
+{
+  "id": "point_cloud_completion",
+  "name": "Point Cloud Completion",
+  "description": "Complete a partial point cloud by modeling high-order geometric correlations.",
+  "default_model": "hyper-pcn"
+}

@@ -1,0 +1,8 @@
+# Lightweight orchestration environment used to run the HyperComp CLI while
+# SuperFast executes in its isolated Python 3.8 worker.
+name: hypercomp-remote-core
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip

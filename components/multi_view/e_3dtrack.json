@@ -1,0 +1,21 @@
+{
+  "id": "e-3dtrack",
+  "name": "E-3DTrack",
+  "task": "event_based_3d_feature_tracking",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/lisiqi19971013/E-3DTrack",
+  "source_path": "third_party/E-3DTrack",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2025-08-21",
+  "upstream_commit": "9f4d61a0912a6337b7595e87337dd3b144e62a00",
+  "upstream_git_linked": false,
+  "license": "MIT; dataset and checkpoint redistribution terms are not declared in the pinned repository",
+  "paper_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Li_3D_Feature_Tracking_via_Event_Camera_CVPR_2024_paper.html",
+  "checkpoint": "available_external: ckpt.pth, 138960387 bytes, SHA256 862ff7db5e31beb93716c325b91c0120c2f61825ebfbaef28f951f053fb29cb2; downloaded from the official Google Drive link on Windows and transferred to /root/autodl-tmp/hypercomp-data/checkpoints/e-3dtrack because AutoDL timed out reaching Google",
+  "upstream_environment": "Linux target; assigned to shared event-remote-cu113. On 2026-08-12 the official checkpoint loaded into TrackerNetEval with all state_dict keys matched, and the HyperComp unified entry produced finite 3D tracks for official test sequence airplane_1/20.",
+  "entry_point": "hypercomp.plugins.e_3dtrack.adapter:run_e_3dtrack",
+  "evidence_path": "docs/source-audits/e-3dtrack.md",
+  "environment_id": "event-remote-cu113",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

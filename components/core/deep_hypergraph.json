@@ -1,0 +1,20 @@
+{
+  "id": "deep-hypergraph",
+  "name": "DeepHypergraph",
+  "task": "hypergraph_computation",
+  "integration_mode": "native",
+  "source_url": "https://github.com/iMoonLab/DeepHypergraph",
+  "source_path": "dhg",
+  "source_distribution": "native_foundation",
+  "upstream_version": "v0.9.7",
+  "upstream_commit": "bb88281a8fdf7333c46312691027ac80c2b282ef",
+  "upstream_git_linked": false,
+  "license": "Apache-2.0",
+  "paper_url": "https://doi.org/10.1016/j.eng.2024.04.017",
+  "checkpoint": "not_applicable",
+  "upstream_environment": "Python >=3.8; torch >=1.12.1; scipy >=1.8; matplotlib >=3.7.0",
+  "entry_point": null,
+  "environment_id": "shared-win-cu121",
+  "local_feasibility": "local_safe",
+  "status": "registered"
+}

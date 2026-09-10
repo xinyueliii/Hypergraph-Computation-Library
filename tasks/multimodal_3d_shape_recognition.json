@@ -1,0 +1,6 @@
+{
+  "id": "multimodal_3d_shape_recognition",
+  "name": "Multi-Modal 3D Shape Recognition and Retrieval",
+  "description": "Recognize a 3D object and extract a retrieval feature from point-cloud and multi-view inputs.",
+  "default_model": "pvrnet"
+}

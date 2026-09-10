@@ -1,0 +1,1 @@
+"""SoftHGNN object-detection integration."""

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Develop Hypergraph Library"
+  short_description: "Extend DHG with consistent project SOPs"
+  default_prompt: "Use $develop-hypergraph-library to follow durable requirements and add or review work in Hypergraph-Computation-Library."

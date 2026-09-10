@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hypergraph-computation-library"
+version = "0.1.0"
+description = "A unified hypergraph computation toolkit for intelligent multimedia streaming."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "xinyueliii"}
+]
+dependencies = [
+  "torch>=1.12.1",
+  "scipy>=1.8",
+  "optuna",
+  "numpy",
+  "scikit-learn",
+  "requests",
+  "matplotlib>=3.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "black",
+  "isort",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dhg*", "hypercomp*"]
+exclude = ["tests*", "examples*", "docs*"]
+
+[tool.black]
+include = '\.pyi?$'
+line-length = 119
+
+[tool.isort]
+profile = "black"
+line_length = 119

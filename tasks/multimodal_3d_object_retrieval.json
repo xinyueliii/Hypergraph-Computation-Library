@@ -1,0 +1,6 @@
+{
+  "id": "multimodal_3d_object_retrieval",
+  "name": "Multi-Modal 3D Object Retrieval",
+  "description": "Retrieve related 3D objects from point-cloud, voxel and multi-view feature representations.",
+  "default_model": "hgm2r"
+}

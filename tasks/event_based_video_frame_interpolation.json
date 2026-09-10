@@ -1,0 +1,6 @@
+{
+  "id": "event_based_video_frame_interpolation",
+  "name": "Event-Based Video Frame Interpolation",
+  "description": "Generate intermediate frames from boundary frames and event-camera streams.",
+  "default_model": "superfast"
+}

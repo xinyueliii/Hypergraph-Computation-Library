@@ -1,0 +1,6 @@
+{
+  "id": "object_detection",
+  "name": "Object Detection",
+  "description": "Detect and localize objects in images or video frames.",
+  "default_model": "hyper-yolo"
+}

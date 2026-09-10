@@ -1,0 +1,30 @@
+# Validated compatibility runtime for SuperFast on the 2026-08-11 AutoDL
+# Ubuntu 20.04 / RTX 3090 instance. The system CUDA 11.3 toolkit and GCC 9 are
+# required to compile slayerPytorch and are not installed by this Conda file.
+name: hypercomp-superfast-remote
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pytorch=1.10.0
+  - torchvision=0.11.1
+  - cudatoolkit=11.3
+  - numpy
+  - scipy=1.10.1
+  - scikit-image=0.19.3
+  - pillow
+  - imageio=2.31.6
+  - matplotlib
+  - pyyaml=6.0.1
+  - h5py=3.8.0
+  - tqdm
+  - pip:
+      - opencv-python-headless==4.8.1.78
+      - gdown==5.2.0
+
+# Install slayerPytorch separately from pinned source commit
+# 01beeeb6a181546d6c6830382ce6086bfc587836 after confirming nvcc and GCC.
+# Do not install its unconstrained requirements over this runtime.

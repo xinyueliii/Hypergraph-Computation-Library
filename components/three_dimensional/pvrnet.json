@@ -1,0 +1,21 @@
+{
+  "id": "pvrnet",
+  "name": "PVRNet",
+  "task": "multimodal_3d_shape_recognition",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/iMoonLab/PVRNet",
+  "source_path": "third_party/PVRNet",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "master-2019-01-14",
+  "upstream_commit": "7b07d62788e67b4052c36b9ca37f6163234a4648",
+  "upstream_git_linked": false,
+  "license": "MIT; ModelNet40 and checkpoint redistribution terms require separate review",
+  "paper_url": "https://arxiv.org/abs/1812.00333",
+  "checkpoint": "available_external: final PVRNet pvrnet.pth, 607295164 bytes, SHA256 8bd231f3c28da9304c55584725f6897efda1d8bb16af03ee9c2441ccd763f235; official Google Drive file 1g3Ef68jRSY2mNf54dOeqNFYZTm4cO13d",
+  "upstream_environment": "Validated modern inference runtime: Ubuntu 20.04; Python 3.11.15; PyTorch 2.2.2+cu121; torchvision 0.17.2+cu121; RTX 3090. The unsupported CUDA 9 training stack was not reconstructed.",
+  "entry_point": "hypercomp.plugins.pvrnet.adapter:run_pvrnet",
+  "evidence_path": "docs/validation/pvrnet-remote-adaptation-2026-08-12.md",
+  "environment_id": "visual-remote-cu121",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "hyper-pcn",
+  "name": "Hyper-PCN",
+  "task": "point_cloud_completion",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/Rinfly/Hyper-PCN",
+  "source_path": "third_party/Hyper-PCN",
+  "source_distribution": "ignored_runtime_checkout_no_source_redistribution",
+  "upstream_version": "master-2026-06-14",
+  "upstream_commit": "e890be8653af8ac55ee73d573936d50d461e80e5",
+  "upstream_git_linked": false,
+  "license": "not declared in the pinned repository; upstream source is not copied into the HyperComp Git history",
+  "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Hyper-PCN_Hypergraph-Based_Point_Cloud_Completion_via_High-Order_Correlation_Modeling_CVPR_2026_paper.html",
+  "checkpoint": "available_external: pcn.pth, 264775090 bytes, SHA256 ad7c22bc5e42dfbfd227cc601628e69346b2e11b5a93b0d9af6f67c5e976ded9; stored outside Git under /root/autodl-tmp/hypercomp-data/checkpoints/hyper-pcn",
+  "upstream_environment": "Validated compatibility runtime: Ubuntu 20.04; Python 3.11.15; PyTorch 2.2.2+cu121; shared CUDA 12.1 nvcc toolchain; GCC 9; RTX 3090; patched architecture list 8.6; Chamfer and PointNet2 extensions compiled and official PCN checkpoint synthetic smoke passed. Upstream Python 3.9/PyTorch 2.1.1/CUDA 11.8 was not reconstructed exactly.",
+  "entry_point": "hypercomp.plugins.hyper_pcn.adapter:run_hyper_pcn",
+  "evidence_path": "docs/validation/hyper-pcn-remote-adaptation-2026-08-11.md",
+  "environment_id": "visual-remote-cu121",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

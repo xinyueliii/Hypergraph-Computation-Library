@@ -1,0 +1,6 @@
+{
+  "id": "event_frame_synthetic_aperture_imaging",
+  "name": "Event-Frame Synthetic Aperture Imaging",
+  "description": "Reconstruct a high-resolution unobstructed image from occluded frames and event-camera measurements.",
+  "default_model": "e-hrsai"
+}

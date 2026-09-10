@@ -1,0 +1,21 @@
+{
+  "id": "hgm2r",
+  "name": "HGM2R",
+  "task": "multimodal_3d_object_retrieval",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/iMoonLab/HGM2R",
+  "source_path": "third_party/HGM2R",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2026-08-12",
+  "upstream_commit": "94d88e5fc727a0abcf730c0528f67484aa1def7f",
+  "upstream_git_linked": false,
+  "license": "Apache-2.0",
+  "paper_url": "https://ieeexplore.ieee.org/document/10319392",
+  "checkpoint": "not_published; repository includes ESB point-cloud, voxel and multi-view pre-extracted features for training/integration smoke",
+  "upstream_environment": "Validated compatibility runtime: Ubuntu 20.04; Python 3.11.15; PyTorch 2.2.2+cu121; SciPy 1.17.1; RTX 3090. Bundled ESB three-modality features completed CMAE, hypergraph construction, HGNN and retrieval smoke in shared visual-remote-cu121 on 2026-08-12.",
+  "entry_point": "hypercomp.plugins.hgm2r.adapter:run_hgm2r",
+  "evidence_path": "docs/validation/hgm2r-remote-adaptation-2026-08-12.md",
+  "environment_id": "visual-remote-cu121",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

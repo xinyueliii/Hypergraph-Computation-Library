@@ -1,0 +1,6 @@
+{
+  "id": "mesh_shape_recognition",
+  "name": "Mesh Shape Recognition and Retrieval",
+  "description": "Classify a 3D mesh and extract its retrieval representation.",
+  "default_model": "meshnet"
+}

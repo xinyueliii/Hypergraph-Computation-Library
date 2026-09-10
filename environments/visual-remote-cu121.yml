@@ -1,0 +1,46 @@
+# Validated shared Linux runtime for DHG/HGNN, YOLOv13, Hyper-YOLO, SoftHGNN,
+# Hyper-PCN, and EvLight V11 on the AutoDL RTX 3090 instance.
+name: hypercomp-visual-remote
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.2.2+cu121
+      - torchvision==0.17.2+cu121
+      - numpy==1.26.4
+      - scipy==1.17.1
+      - scikit-learn==1.9.0
+      - optuna==4.9.0
+      - matplotlib==3.11.1
+      - opencv-python-headless==4.10.0.84
+      - pillow==12.3.0
+      - pyyaml==6.0.3
+      - requests==2.34.2
+      - tqdm==4.70.0
+      - psutil==7.2.2
+      - py-cpuinfo==9.0.0
+      - pandas==3.0.5
+      - seaborn==0.13.2
+      - ultralytics-thop==2.1.6
+      - einops==0.8.1
+      - huggingface-hub==1.27.0
+      - easydict==1.13
+      - timm==1.0.19
+      - ninja==1.13.0
+      - nvidia-cuda-nvcc-cu12==12.1.105
+      - absl-py==2.3.1
+      - ftfy==6.3.1
+      - regex==2025.7.34
+
+# External source trees remain isolated runtime snapshots under
+# third_party/. HyperComp selects them in separate worker processes, so the
+# duplicate `ultralytics` package names do not collide in one interpreter.
+# Hyper-PCN additionally uses the shared toolchain described by
+# `environments/cuda-12.1-toolchain.yml`; Chamfer 2.0.0 and PointNet2 Ops 3.0.0
+# are built from the pinned ignored source snapshot.
+# EvLight V11 imports its pinned OpenAI CLIP source snapshot directly in an
+# isolated worker. The CLIP ViT-B/32 parameters stay outside Git and are passed
+# explicitly through `clip_checkpoint`.

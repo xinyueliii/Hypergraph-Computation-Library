@@ -1,0 +1,21 @@
+{
+  "id": "soft-hgnn",
+  "name": "SoftHGNN Image Classification",
+  "task": "image_classification",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/Mengqi-Lei/SoftHGNN",
+  "source_path": "third_party/SoftHGNN",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2026-08-09",
+  "upstream_commit": "3f46b20eeb226616a8af89f321b2e1dc3ee3634f",
+  "upstream_git_linked": false,
+  "license": "MIT",
+  "paper_url": "https://arxiv.org/abs/2505.15325",
+  "checkpoint": "not_published_generate_by_training",
+  "upstream_environment": "Untrained smoke validated on Windows shared-win-cu121 and Linux visual-remote-cu121: Python 3.11.15; PyTorch 2.2.2+cu121; torchvision 0.17.2+cu121; einops 0.8.1; RTX 3090 smoke passed 2026-08-11. Upstream training pins PyTorch 2.4.1+cu118.",
+  "entry_point": "hypercomp.plugins.soft_hgnn.adapter:run_soft_hgnn",
+  "evidence_path": "docs/validation/soft-hgnn-local-smoke-2026-08-10.md",
+  "environment_id": "shared-win-cu121",
+  "local_feasibility": "local_safe",
+  "status": "adapted"
+}

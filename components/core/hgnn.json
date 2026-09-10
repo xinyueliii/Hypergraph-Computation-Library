@@ -1,0 +1,21 @@
+{
+  "id": "hgnn",
+  "name": "HGNN",
+  "task": "vertex_classification",
+  "integration_mode": "native",
+  "source_url": "https://github.com/iMoonLab/DeepHypergraph",
+  "source_path": "dhg/models/hypergraphs/hgnn.py",
+  "source_distribution": "native_foundation",
+  "upstream_version": "v0.9.7",
+  "upstream_commit": "bb88281a8fdf7333c46312691027ac80c2b282ef",
+  "upstream_git_linked": false,
+  "license": "Apache-2.0",
+  "paper_url": "https://doi.org/10.1609/aaai.v33i01.33013558",
+  "checkpoint": "generated_by_training",
+  "upstream_environment": "Validated in core-cu126, shared-win-cu121, and visual-remote-cu121; CPU and CUDA supported; remote RTX 3090 smoke and checkpoint restore passed on 2026-08-11",
+  "entry_point": "hypercomp.tasks.vertex_classification:run_vertex_classification",
+  "evidence_path": "docs/validation/hgnn-family-local-2026-08-09.md",
+  "environment_id": "shared-win-cu121",
+  "local_feasibility": "local_safe",
+  "status": "adapted"
+}

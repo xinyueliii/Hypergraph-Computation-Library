@@ -1,0 +1,6 @@
+{
+  "id": "event_based_3d_feature_tracking",
+  "name": "Event-Based 3D Feature Tracking",
+  "description": "Estimate high-speed three-dimensional feature trajectories from stereo event streams.",
+  "default_model": "e-3dtrack"
+}

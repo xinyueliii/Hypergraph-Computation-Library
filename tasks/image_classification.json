@@ -1,0 +1,6 @@
+{
+  "id": "image_classification",
+  "name": "Image Classification",
+  "description": "Classify images with visual models that capture high-order semantic relationships.",
+  "default_model": "soft-hgnn"
+}

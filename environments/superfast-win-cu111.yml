@@ -1,0 +1,28 @@
+# Target isolated runtime for SuperFast. This specification is not yet
+# verified on Windows because slayerPytorch requires a C++/CUDA source build
+# and the current machine has no nvcc toolchain.
+name: hypercomp-superfast
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pytorch=1.9.1
+  - torchvision=0.10.1
+  - cudatoolkit=11.1
+  - numpy=1.21
+  - scipy
+  - scikit-image
+  - pillow
+  - imageio
+  - matplotlib
+  - opencv
+  - pyyaml
+  - h5py
+  - tqdm
+
+# slayerPytorch is intentionally not installed here as a normal package. Its
+# GPL-3.0 source must be pinned, compiled with nvcc and a supported C++ toolchain,
+# and validated separately before SuperFast inference can be called runnable.

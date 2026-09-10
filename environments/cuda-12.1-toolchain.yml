@@ -1,0 +1,15 @@
+# Shared compiler-only toolchain for CUDA extensions used with visual-cu121.
+# This is not a separate Python/PyTorch model environment.
+name: hypercomp-cuda-12.1-toolchain
+channels:
+  - nvidia
+dependencies:
+  - cuda-nvcc=12.1.105
+  - cuda-cudart=12.1.105
+  - cuda-cudart-dev=12.1.105
+  - cuda-cccl=12.1.109
+
+# Validated path: /root/autodl-tmp/hypercomp-data/toolchains/cuda-12.1
+# Installed size on 2026-08-11: approximately 184 MB.
+# CUDA math-library headers are reused from the PyTorch pip packages through
+# CPATH rather than duplicated into this toolchain.

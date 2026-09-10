@@ -1,0 +1,21 @@
+{
+  "id": "meshnet",
+  "name": "MeshNet",
+  "task": "mesh_shape_recognition",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/iMoonLab/MeshNet",
+  "source_path": "third_party/MeshNet",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "master-2021-12-21",
+  "upstream_commit": "70f9115a121cef71f62d774088771337c3beaf4b",
+  "upstream_git_linked": false,
+  "license": "MIT; ModelNet/Manifold40 and checkpoint redistribution terms require separate review",
+  "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/4840/4713",
+  "checkpoint": "available_external: maintainer replacement from official issue 27, 17094421 bytes, SHA256 cff4252d94057d44c33cbab7e549756f7ace1330309ca17b19a55a62b56f4613; stored at /root/autodl-tmp/hypercomp-data/checkpoints/meshnet-pretrained.pkl",
+  "upstream_environment": "Validated compatibility runtime: shared event-remote-cu113; Python 3.8.10; PyTorch 1.10.0+cu113; PyMeshLab 2021.10; Rich 13.9.4; RTX 3090. One Manifold40 OBJ was processed to NPZ and passed checkpoint-backed unified-entry inference on 2026-08-12.",
+  "entry_point": "hypercomp.plugins.meshnet.adapter:run_meshnet",
+  "evidence_path": "docs/source-audits/meshnet.md",
+  "environment_id": "event-remote-cu113",
+  "local_feasibility": "remote_recommended",
+  "status": "adapted"
+}

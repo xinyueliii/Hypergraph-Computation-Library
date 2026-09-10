@@ -1,0 +1,21 @@
+{
+  "id": "yolov13",
+  "name": "YOLOv13",
+  "task": "object_detection",
+  "integration_mode": "isolated_plugin",
+  "source_url": "https://github.com/iMoonLab/yolov13",
+  "source_path": "third_party/YOLOv13",
+  "source_distribution": "ignored_runtime_checkout",
+  "upstream_version": "main-2026-08-09",
+  "upstream_commit": "73289949533efac82bb5f72ec19b746618656bd2",
+  "upstream_git_linked": false,
+  "license": "AGPL-3.0-only",
+  "paper_url": "https://arxiv.org/abs/2506.17733",
+  "checkpoint": "downloaded_outside_git: yolov13n.pt; 10570688 bytes; sha256=6653035017B0F111F80EC11ED914874EA85699B104AEAC1E46E517D16889D6B7",
+  "upstream_environment": "Validated on Windows shared-win-cu121 and Linux visual-remote-cu121: Python 3.11.15; PyTorch 2.2.2+cu121; torchvision 0.17.2+cu121; NumPy 1.26.4; OpenCV 4.10.0 headless on Linux; SDPA fallback; RTX 3090 fixed-image inference passed 2026-08-11",
+  "entry_point": "hypercomp.plugins.yolov13.adapter:run_yolov13",
+  "evidence_path": "docs/validation/yolov13-local-adaptation-2026-08-10.md",
+  "environment_id": "shared-win-cu121",
+  "local_feasibility": "local_safe",
+  "status": "adapted"
+}
